@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Reyno - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+            line-height: 1.5;
+            color: #000;
+            background: #fff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #000;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            margin-bottom: 8px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            font-size: 0.95em;
+            color: #000;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .summary {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1em;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+            padding-top: 8px;
+            border-top: 2px solid #000;
+            letter-spacing: 1px;
+        }
+
+        .job, .education-item, .project-item {
+            margin-bottom: 20px;
+        }
+
+        .job-header, .education-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .job-title, .degree, .project-title {
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .company, .school {
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .date {
+            font-weight: normal;
+            white-space: nowrap;
+        }
+
+        ul {
+            margin-left: 35px;
+            margin-top: 5px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            font-size: 0.95em;
+        }
+
+        .skills-section p, .other-section p {
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .skills-section strong, .other-section strong {
+            font-weight: bold;
+        }
+
+        .social-media {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: #000;
+            text-decoration: none;
+            font-size: 0.95em;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .contact-info {
+                font-size: 0.85em;
+            }
+
+            .job-header, .education-header, .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .date {
+                margin-top: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MARK REYNO</h1>
+            <div class="contact-info">
+                Bellevue, WA • 360-627-0282 • <a href="mailto:mark.reyno@bellevuecollege.edu">mark.reyno@bellevuecollege.edu</a> • <a href="https://www.linkedin.com/in/mark-reyno" target="_blank">linkedin.com/in/mark-reyno</a>
+            </div>
+        </header>
+
+        <div class="summary">
+            <p> A student pursuing a career a bachelor's degree in software development, with a focus on data science and machine learning.</p>
+        </div>
+
+
+        <section class="skills-section">
+            <h2>SKILLS & OTHER</h2>
+            <p><strong>Skills:</strong> HTML, CSS, JavaScript, React, C#, SQL, Python, Pandas, NumPy, Git, REST APIs, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Keras, PyTorch, NLP, Data Visualization, Data Analysis, Data Cleaning, Data Preprocessing </p>
+        </section>
+
+        <section class="education-section">
+            <h2>EDUCATION</h2>
+            
+            <div class="education-item">
+                <div class="education-header">
+                    <div>
+                        <div class="degree">Bellevue College, Bellevue, WA</div>
+                        <div class="school">Bachelor's in Software Development, AI Concentration Track</div>
+                    </div>
+                    <div class="date">2023 – Present</div>
+                </div>
+                <ul>
+                    <li><strong>Expected Graduation:</strong> June 2027</li>
+                    <li><strong>Relevant Coursework:</strong> Programming Machine Learning, Statistical Analysis, OOP with Python, Data with Python, OOP with C#,Database Theory and SQL Programming, Using & Supporting Linux </li>
+                </ul>
+            </div>
+        </section>
+
+        
+
+        <section class="projects-section">
+            <h2>PROJECTS</h2>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <div>
+                        <div class="project-title">Bonsai Classifier</div>
+                        <div class="company">Full-Stack Web Application</div>
+                    </div>
+                    <div class="date">Month Year – Month Year</div>
+                </div>
+                <ul>
+                    <li>Developed a machine learning classifier using Python, TensorFlow and React to identify bonsai tree species with 92% accuracy.</li>
+                    <li>Implemented image preprocessing pipeline using OpenCV and NumPy to enhance model training efficiency by 40%.</li>
+                    <li>Built RESTful API with Node.js and Express to handle image uploads and classification requests.</li>
+                    <li><a href="https://github.com/markreyno" target="_blank" style="color: #000; text-decoration: underline;">View on GitHub</a></li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div>
+                        <div class="project-title">Shipstation Data Converter</div>
+                        <div class="company">Python Script</div>
+                    </div>
+                    <div class="date">Month Year – Month Year</div>
+                </div>
+                <ul>
+                    <li>Developed a Python script to convert Shipstation data into a format compatible with Shopify, allowing for seamless integration of order data into Shopify.</li>
+                    <li>Worked with messy data and used Pandas to clean and preprocess the data into usable data.</li>
+                    
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div>
+                        <div class="project-title">PDF Scanner Convert</div>
+                        <div class="company">Python Script</div>
+                    </div>
+                    <div class="date">Month Year – Month Year</div>
+                </div>
+                <ul>
+                    <li>Takes a PDF file and converts it into an excel file</li>
+                    <li>Uses machine learning model to identify handwritten numbers</li>
+                    
+                </ul>
+            </div>
+        </section>
+
+        <section class="social-media">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mark-reyno" target="_blank">LinkedIn</a>
+                <a href="https://github.com/markreyno" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Portfolio</a>
+                <a href="#" target="_blank">YouTube</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href='#' target="_blank">TikTok</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
