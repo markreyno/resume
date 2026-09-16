@@ -26,7 +26,6 @@
         }
 
         header {
-            text-align: center;
             margin-bottom: 20px;
             padding-bottom: 15px;
             border-bottom: 2px solid #000;
@@ -53,14 +52,6 @@
             text-decoration: underline;
         }
 
-        .summary {
-            text-align: center;
-            margin: 20px 0;
-            font-size: 1em;
-            line-height: 1.6;
-            padding: 0 20px;
-        }
-
         section {
             margin-bottom: 25px;
         }
@@ -68,7 +59,7 @@
         h2 {
             font-size: 1.2em;
             font-weight: bold;
-            text-align: center;
+            text-align: left;
             margin-bottom: 15px;
             padding-top: 8px;
             border-top: 2px solid #000;
@@ -111,36 +102,14 @@
             font-size: 0.95em;
         }
 
-        .skills-section p, .other-section p {
+        .skills-section p {
             font-size: 0.95em;
-            line-height: 1.6;
+            line-height: 1.8;
+            margin-bottom: 8px;
         }
 
-        .skills-section strong, .other-section strong {
+        .skills-section strong {
             font-weight: bold;
-        }
-
-        .social-media {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .social-links a {
-            color: #000;
-            text-decoration: none;
-            font-size: 0.95em;
-        }
-
-        .social-links a:hover {
-            text-decoration: underline;
         }
 
         @media print {
@@ -181,19 +150,9 @@
         <header>
             <h1>MARK REYNO</h1>
             <div class="contact-info">
-                Bellevue, WA • 360-627-0282 • <a href="mailto:mark.reyno@bellevuecollege.edu">mark.reyno@bellevuecollege.edu</a> • <a href="https://www.linkedin.com/in/mark-reyno" target="_blank">linkedin.com/in/mark-reyno</a>
+                Bellevue, WA • 360-627-0282 • <a href="mailto:mark.reyno@bellevuecollege.edu">mark.reyno@bellevuecollege.edu</a> • <a href="https://www.linkedin.com/in/mark-reyno" target="_blank">linkedin.com/in/mark-reyno</a> • <a href="https://github.com/markreyno" target="_blank">github.com/markreyno</a>
             </div>
         </header>
-
-        <div class="summary">
-            <p> A student pursuing a career a bachelor's degree in software development, with a focus on data science and machine learning.</p>
-        </div>
-
-
-        <section class="skills-section">
-            <h2>SKILLS & OTHER</h2>
-            <p><strong>Skills:</strong> HTML, CSS, JavaScript, React, C#, SQL, Python, Pandas, NumPy, Git, REST APIs, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Keras, PyTorch, NLP, Data Visualization, Data Analysis, Data Cleaning, Data Preprocessing </p>
-        </section>
 
         <section class="education-section">
             <h2>EDUCATION</h2>
@@ -213,21 +172,12 @@
             </div>
         </section>
 
-        <section class="experience-section">
-            <h2>EXPERIENCE</h2>
-            
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Web Development Intern</div>
-                        <div class="company">Cascade Judo Academy (Nonprofit)</div>
-                    </div>
-                    <div class="date">Sep 2026 – Present</div>
-                </div>
-                <ul>
-                    <li>Web development internship supporting Cascade Judo Academy, a nonprofit organization.</li>
-                </ul>
-            </div>
+        <section class="skills-section">
+            <h2>TECHNICAL SKILLS</h2>
+            <p><strong>Languages:</strong> Python, C#, JavaScript, SQL, HTML, CSS</p>
+            <p><strong>Web:</strong> React, REST APIs</p>
+            <p><strong>ML & Data:</strong> Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Keras, PyTorch, NLP, Data Visualization, Data Analysis, Data Cleaning, Data Preprocessing</p>
+            <p><strong>Tools:</strong> Git</p>
         </section>
 
         <section class="projects-section">
@@ -272,7 +222,7 @@
                         <div class="project-title">Bonsai Classifier</div>
                         <div class="company">Full-Stack Web Application</div>
                     </div>
-                    <div class="date">Month Year – Month Year</div>
+                    <div class="date"></div>
                 </div>
                 <ul>
                     <li>Developed a machine learning classifier using Python, TensorFlow and React to identify bonsai tree species with 92% accuracy.</li>
@@ -283,15 +233,20 @@
             </div>
         </section>
 
-        <section class="social-media">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/mark-reyno" target="_blank">LinkedIn</a>
-                <a href="https://github.com/markreyno" target="_blank">GitHub</a>
-                <a href="#" target="_blank">Twitter</a>
-                <a href="#" target="_blank">Portfolio</a>
-                <a href="#" target="_blank">YouTube</a>
-                <a href="#" target="_blank">Instagram</a>
-                <a href='#' target="_blank">TikTok</a>
+        <section class="experience-section">
+            <h2>EXPERIENCE</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Web Development Intern</div>
+                        <div class="company">Cascade Judo Academy (Nonprofit)</div>
+                    </div>
+                    <div class="date">Sep 2026 – Present</div>
+                </div>
+                <ul>
+                    <li>Web development internship supporting Cascade Judo Academy, a nonprofit organization.</li>
+                </ul>
             </div>
         </section>
     </div>
