@@ -1,254 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark Reyno - Resume</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
-            line-height: 1.5;
-            color: #000;
-            background: #fff;
-            padding: 40px 20px;
-        }
-
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-            background: white;
-        }
-
-        header {
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #000;
-        }
-
-        header h1 {
-            font-size: 2.2em;
-            margin-bottom: 8px;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        .contact-info {
-            font-size: 0.95em;
-            color: #000;
-        }
-
-        .contact-info a {
-            color: #000;
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            margin-bottom: 25px;
-        }
-
-        h2 {
-            font-size: 1.2em;
-            font-weight: bold;
-            text-align: left;
-            margin-bottom: 15px;
-            padding-top: 8px;
-            border-top: 2px solid #000;
-            letter-spacing: 1px;
-        }
-
-        .job, .education-item, .project-item {
-            margin-bottom: 20px;
-        }
-
-        .job-header, .education-header, .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
-        }
-
-        .job-title, .degree, .project-title {
-            font-weight: bold;
-            font-size: 1em;
-        }
-
-        .company, .school {
-            font-style: italic;
-            margin-bottom: 8px;
-        }
-
-        .date {
-            font-weight: normal;
-            white-space: nowrap;
-        }
-
-        ul {
-            margin-left: 35px;
-            margin-top: 5px;
-        }
-
-        li {
-            margin-bottom: 6px;
-            font-size: 0.95em;
-        }
-
-        .skills-section p {
-            font-size: 0.95em;
-            line-height: 1.8;
-            margin-bottom: 8px;
-        }
-
-        .skills-section strong {
-            font-weight: bold;
-        }
-
-        @media print {
-            body {
-                padding: 0;
-            }
-            .container {
-                max-width: 100%;
-            }
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 20px 10px;
-            }
-
-            header h1 {
-                font-size: 1.8em;
-            }
-
-            .contact-info {
-                font-size: 0.85em;
-            }
-
-            .job-header, .education-header, .project-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .date {
-                margin-top: 3px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mark Reyno - Software Development student focused on AI and cloud, with Python skills and practical internal tools experience.">
+<title>Mark Reyno - Resume</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; padding: 40px 24px; font-family: 'Segoe UI', Arial, sans-serif; font-size: 15px; line-height: 1.5; color: #171717; background: #fff; }
+main { max-width: 850px; margin: auto; }
+h1 { text-align: center; margin: 0 0 8px; font-size: 30px; letter-spacing: 1px; }
+.contact { text-align: center; font-size: 14px; overflow-wrap: anywhere; }
+p { margin: 5px 0; }
+h2 { color: #18334d; font-size: 16px; border-bottom: 1px solid #cbd5df; padding-bottom: 5px; margin: 24px 0 10px; }
+a { color: #18334d; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid #18334d; outline-offset: 3px; }
+.bullet { margin-left: 16px; padding-left: 0; position: relative; }
+.bullet::before { content: '\2022'; position: absolute; left: -13px; }
+@media (max-width: 600px) { body { padding: 24px 16px; } h1 { font-size: 26px; } }
+@page { size: letter; margin: 0.4in; }
+@media print {
+body { padding: 0; font-size: 9.5pt; line-height: 1.17; }
+main { max-width: none; }
+h1 { font-size: 19pt; margin-bottom: 4px; }
+.contact { font-size: 8.5pt; }
+p { margin: 3px 0; }
+h2 { font-size: 10pt; margin: 9px 0 4px; padding-bottom: 2px; break-after: avoid; }
+p { orphans: 2; widows: 2; }
+a { color: inherit; text-decoration: none; }
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>MARK REYNO</h1>
-            <div class="contact-info">
-                Bellevue, WA • 360-627-0282 • <a href="mailto:mark.reyno@bellevuecollege.edu">mark.reyno@bellevuecollege.edu</a> • <a href="https://www.linkedin.com/in/mark-reyno" target="_blank">linkedin.com/in/mark-reyno</a> • <a href="https://github.com/markreyno" target="_blank">github.com/markreyno</a>
-            </div>
-        </header>
-
-        <section class="education-section">
-            <h2>EDUCATION</h2>
-            
-            <div class="education-item">
-                <div class="education-header">
-                    <div>
-                        <div class="degree">Bellevue College, Bellevue, WA</div>
-                        <div class="school">Bachelor's in Software Development, AI Concentration Track</div>
-                    </div>
-                    <div class="date">2023 – Present</div>
-                </div>
-                <ul>
-                    <li><strong>Expected Graduation:</strong> June 2027</li>
-                    <li><strong>Relevant Coursework:</strong> Programming Machine Learning, Statistical Analysis, OOP with Python, Data with Python, OOP with C#,Database Theory and SQL Programming, Using & Supporting Linux </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="skills-section">
-            <h2>TECHNICAL SKILLS</h2>
-            <p><strong>Languages:</strong> Python, C#, JavaScript, SQL, HTML, CSS</p>
-            <p><strong>Web:</strong> React, REST APIs</p>
-            <p><strong>ML & Data:</strong> Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Keras, PyTorch, NLP, Data Visualization, Data Analysis, Data Cleaning, Data Preprocessing</p>
-            <p><strong>Tools:</strong> Git</p>
-        </section>
-
-        <section class="projects-section">
-            <h2>PROJECTS</h2>
-            
-            <div class="project-item">
-                <div class="project-header">
-                    <div>
-                        <div class="project-title">AgentDocs</div>
-                        <div class="company">Full-Stack Web + Desktop App</div>
-                    </div>
-                    <div class="date">Jun 2026 – Present</div>
-                </div>
-                <ul>
-                    <li>Built an AI-assisted writing editor in TypeScript/React (TipTap) with a browser demo and an Electron desktop app.</li>
-                    <li>Desktop app supports user API keys for Gemini, GPT, and Claude; the browser demo defaults to Claude for chat.</li>
-                    <li>Shipped at agentdocs.pro with anonymous sessions and usage limits; documents save locally with import/export between devices.</li>
-                    <li><a href="https://github.com/markreyno/agentdocs" target="_blank" style="color: #000; text-decoration: underline;">View on GitHub</a> • <a href="https://agentdocs.pro" target="_blank" style="color: #000; text-decoration: underline;">Live Demo</a></li>
-                </ul>
-            </div>
-
-            <div class="project-item">
-                <div class="project-header">
-                    <div>
-                        <div class="project-title">Brick Breaker Game</div>
-                        <div class="company">Bellevue College - AI410 Final Project (Team Project)</div>
-                    </div>
-                    <div class="date">AI410 Final</div>
-                </div>
-                <ul>
-                    <li>Developed a classic Brick Breaker game using Python 3.12, pygame, and LangGraph with paddle/ball physics, level progression, and win/loss conditions.</li>
-                    <li>Implemented persistent leaderboard system with JSON storage for score tracking.</li>
-                    <li>Built AI-assisted level editor using LangGraph and Gemini for dynamic level design.</li>
-                    <li>Team project with Justin Bryant, Tyler Lovison, and Meron Assefa.</li>
-                    <li><a href="https://github.com/CloudZero2049/AI410-Final" target="_blank" style="color: #000; text-decoration: underline;">View on GitHub</a></li>
-                </ul>
-            </div>
-
-            <div class="project-item">
-                <div class="project-header">
-                    <div>
-                        <div class="project-title">Bonsai Classifier</div>
-                        <div class="company">Full-Stack Web Application</div>
-                    </div>
-                    <div class="date"></div>
-                </div>
-                <ul>
-                    <li>Developed a machine learning classifier using Python, TensorFlow and React to identify bonsai tree species with 92% accuracy.</li>
-                    <li>Implemented image preprocessing pipeline using OpenCV and NumPy to enhance model training efficiency by 40%.</li>
-                    <li>Built RESTful API with Node.js and Express to handle image uploads and classification requests.</li>
-                    <li><a href="https://github.com/markreyno" target="_blank" style="color: #000; text-decoration: underline;">View on GitHub</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="experience-section">
-            <h2>EXPERIENCE</h2>
-            
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Web Development Intern</div>
-                        <div class="company">Cascade Judo Academy (Nonprofit)</div>
-                    </div>
-                    <div class="date">Sep 2026 – Present</div>
-                </div>
-                <ul>
-                    <li>Web development internship supporting Cascade Judo Academy, a nonprofit organization.</li>
-                </ul>
-            </div>
-        </section>
-    </div>
+<main aria-label="Mark Reyno resume">
+<h1>MARK REYNO</h1>
+<p class="contact">Bellevue, WA | 360-627-0282 | <a href="mailto:mark.reyno@bellevuecollege.edu">mark.reyno@bellevuecollege.edu</a></p>
+<p class="contact"><a href="https://linkedin.com/in/mark-reyno">linkedin.com/in/mark-reyno</a> | <a href="https://github.com/markreyno">github.com/markreyno</a> | <a href="https://markreyno.com">markreyno.com</a></p>
+<h2>EDUCATION</h2>
+<p><b>Bellevue College</b> - Bachelor's in Software Development, AI Concentration</p>
+<p>Expected graduation: Fall 2027</p>
+<p><b>Relevant coursework:</b> Machine Learning, Statistical Analysis, Natural Language Processing, Computer Vision, Database Theory and SQL Programming, Linux</p>
+<h2>TECHNICAL SKILLS</h2>
+<p><b>Primary language:</b> Python</p>
+<p><b>Working familiarity:</b> pandas, NumPy, scikit-learn, SciPy, PyTorch, OpenCV, FastAPI</p>
+<p><b>AI/ML fundamentals:</b> Sentiment analysis, image classification, text encoding and decoding</p>
+<p><b>AWS guided labs:</b> EC2, S3, RDS, Route 53, VPC, IAM policies, security groups</p>
+<p><b>Tools:</b> Git/GitHub, Tailscale | <b>AI-assisted development:</b> Agent tools, reusable prompts, manual validation</p>
+<h2>EXPERIENCE</h2>
+<p><b>Schwalbe North America - Warehouse Worker</b> | 2023-Present</p>
+<p><i>Self-initiated Internal Tools Development | September 2026-Present</i></p>
+<p class="bullet">Built an Electron application for Windows with photo-transfer and label-printing features used by coworkers and management.</p>
+<p class="bullet">Enabled freight-photo uploads from a phone browser through Tailscale; automatically saved images to the appropriate folders, replacing an email-and-download process limited to five images per message.</p>
+<p class="bullet">Created custom label formats and a recurring task scheduler to simplify warehouse workflows.</p>
+<p class="bullet">Integrated GitHub Releases with in-app update notifications and user-initiated installation; tested changes on a personal desktop and phone before releasing workplace updates.</p>
+<p><b>Cascade Judo Academy - Volunteer Web Developer</b> | September-October 2026</p>
+<p class="bullet">Improved and deployed prospect registration and membership workflows, including booking notifications and admin alerts for payment, waiver completion, and other membership requirements.</p>
+<p class="bullet">Consolidated sign-in and sign-up into one page and refined the account-access interface.</p>
+<p class="bullet">Collaborated with the head coach to implement features using Lovable's AI development tools; manually tested workflows and reviewed changes before deployment.</p>
+<h2>PROJECTS</h2>
+<p><b>AgentDocs - AI-Assisted Document Editor</b> | June-August 2026</p>
+<p><i>TypeScript, React, TipTap, Electron</i> | <a href="https://github.com/markreyno/agentdocs">GitHub</a> | <a href="https://agentdocs.pro">Demo</a></p>
+<p class="bullet">Led research, design, and AI-assisted implementation of a document editor integrating local models and cloud model APIs with user-provided API keys.</p>
+<p class="bullet">Designed tools that allow an AI agent to read document content and make targeted edits at the word and paragraph level.</p>
+<p class="bullet">Created user-defined slash commands that apply reusable editing instructions, such as changing a passage's tone.</p>
+<p class="bullet">Validated editing workflows through manual testing and AI-agent-executed test cases, reviewing results to identify issues.</p>
+<p><b>Brick Breaker - Team Course Project</b></p>
+<p><i>Python, pygame, Git/GitHub</i> | <a href="https://github.com/CloudZero2049/AI410-Final">GitHub</a></p>
+<p class="bullet">Collaborated with three teammates on a playable game, contributing to the core gameplay workflow through AI-assisted development.</p>
+<p class="bullet">Used Git/GitHub to contribute code and reviewed teammates' changes to understand added functionality.</p>
+<h2>ADDITIONAL TRAINING</h2>
+<p><b>AWS:</b> Completed Cloud Practitioner exam preparation; Solutions Architect - Associate exam preparation in progress.</p>
+</main>
 </body>
 </html>
+
